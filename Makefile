@@ -28,8 +28,8 @@ nginx:
 	sudo ls /var/log/nginx/
 	
 app: 
-	sudo systemctl stop isubata.python.service
-	sudo systemctl start isubata.python.service
+	sudo systemctl stop isubata.golang.service
+	sudo systemctl start isubata.golang.service
 	
 bench:
 	cd /home/isucon/isubata/bench && ./bin/bench -remotes=127.0.0.1 -output result.json
